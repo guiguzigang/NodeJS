@@ -1,0 +1,38 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": ".\\node_modules\\.bin\\electron .",
+    "build": ".\\node_modules\\.bin\\electron-builder -w"
+  },
+  "build": {
+    "appId": "www.xxxx.com",
+    "productName": "todos",
+    "directories": {
+      "output": "./dist"
+    },
+    "win": {
+      "icon": "./source/logo.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./source/logo.ico",
+      "installerHeader": "./source/poster.png",
+      "license": "./source/license.txt"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5"
+  }
+}

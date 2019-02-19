@@ -44,7 +44,7 @@ server.on('connection', socket => {
 
     socket.on('data', data => {
         // socket.write('show me the money');
-
+        //  socket.remotePort 这里的端口是发送信息的端口
         console.log(data.toString(), socket.remoteAddress, socket.remotePort);
     });
 

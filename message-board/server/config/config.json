@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "message-board-development",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "+08:00",
+    "operatorsAliases": false,
+    "seederStorage": "json",
+    "seederStoragePath": "seederStorage.json"
+  },
+  "test": {
+    "username": "root",
+    "password": "123456",
+    "database": "message-board-test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "123456",
+    "database": "message-board-production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
